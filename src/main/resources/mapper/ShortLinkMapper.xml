@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.noly.shortlink.mapper.ShortLinkMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.noly.shortlink.entity.ShortLink">
+        <id column="id" property="id" />
+        <result column="short_link_url" property="shortLinkUrl" />
+        <result column="long_link_hash" property="longLinkHash" />
+        <result column="long_link_url" property="longLinkUrl" />
+        <result column="status" property="status" />
+        <result column="expired_time" property="expiredTime" />
+        <result column="created_time" property="createdTime" />
+    </resultMap>
+
+</mapper>
